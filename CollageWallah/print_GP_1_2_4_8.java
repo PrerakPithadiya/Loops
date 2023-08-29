@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class print_GP_1_2_4_8{
+public class print_GP_3_12_48{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the Number : ");
@@ -7,12 +7,12 @@ public class print_GP_1_2_4_8{
 		printGivenGP(n);
 	}
 	public static void printGivenGP(int n){
-		System.out.println("\nThe GP upto '" + n + "' terms is : ");
-		int a = 1;
+		System.out.print("\nThe GP upto '" + n + "' terms is : \nGP : ");
+		int a = 3;
 		System.out.print("[");
 		for(int i = 1; i <= n; i++){
 			System.out.print(a);
-			a *= 2;
+			a *= 4;
 			if(i != n){ System.out.print(", "); }
 		}
 		System.out.println("]");
